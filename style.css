@@ -1,42 +1,107 @@
 .heading{
     margin-top: 60px;
-    margin-left: 50px ;
-    font-weight:700 ;
-    font-size:x-large;
+    margin-left: 50px;
+    font-weight: 700;
+    font-size: x-large;
     color: white;
     font-family: 'Azeret Mono', monospace;
-    
 }
 
 h4{
     margin-left: 10px;
-    margin-top:30px;
+    margin-top: 30px;
     color: white;
     font-family: 'Azeret Mono', monospace;
 }
+
 button{
     padding: 1%;
     border-spacing: 20px;
     font-family: 'Azeret Mono', monospace;
-    margin-left: 50px ;
+    margin-left: 50px;
 }
+
 #cbuton{
     font-family: 'Azeret Mono', monospace;  
-   
+    margin-bottom: 10px;
 }
+
 #img{
-
-  margin-top: 60px;
-  width: 200px; /* Or any size */
-  height: 200px;
-  border-radius: 50%;
-  overflow: hidden; /* Hides parts of image outside the circle */
-  display: inline-block; /* Or block */
+    margin-top: 60px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    object-fit: cover; /* Ensures image fills circle properly */
+    /* Add loading optimization */
+    background-color: #555; /* Placeholder color while loading */
 }
+
 .large{
-    display: flex;  
-}
-html{
-  scroll-behavior: smooth;
+    display: flex;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+#img.loading {
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+.about-section {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* left / right */
+  gap: 400px;
+  
+  background: rgb(43, 41, 41);
+  font-family: 'Azeret Mono', monospace;
+  color: #fff;
+}
+
+.about-left h2 {
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+
+.about-right {
+  min-width: 600px;
+}
+
+.about-right h3 {
+  margin: 16px 0;
+  font-size: 22px;
+}
+
+.about-right p {
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  padding: 1%;
+  border-spacing: 20px;
+  background-color: rgba(83, 83, 83, 0.396);
+  border: solid rgb(243, 239, 239);
+  color: #f3eeee;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+ 
+.content{
+    display: block;
+    align-items: center;
+}

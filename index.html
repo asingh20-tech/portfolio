@@ -3,56 +3,68 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Aditya's Portfolio </title>
-        <meta name="Aditya Raj" content="computer science, portfolio">
+        <title>Aditya's Portfolio</title>
+        <meta name="author" content="Aditya Raj">
+        <meta name="description" content="computer science, portfolio">
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;700&display=swap" rel="stylesheet">
+        <!-- Preload the image for faster loading -->
+        <link rel="preload" as="image" href="img/Mimg.png">
     </head>
-    <body style="background-color: rgb(43, 41, 41);" >
-
+    <body style="background-color: rgb(43, 41, 41);">
 
         <header>
-            <h4> ADITYA RAJ  
+            <h4>ADITYA RAJ  
             <button style="background-color: rgba(83, 83, 83, 0.396); border: solid rgb(243, 239, 239);">
-                <a href="https://www.linkedin.com/in/aditya-raj-singh-14689a351/" target="_blank" title="LINKEDIN ↗" style="color: rgb(255, 254, 254); text-decoration :white;">GET IN TOUCH ↗</a>
+                <a href="https://www.linkedin.com/in/aditya-raj-singh-14689a351/" target="_blank" title="LINKEDIN ↗" style="color: rgb(255, 254, 254); text-decoration: none;">GET IN TOUCH ↗</a>
             </button>
-        </header>
             </h4>
+        </header>
             
-            <hr color="Grey">
+        <hr color="Grey">
 
-            <div class = "large">
-            <img id = "img" src = img/Mimg.png alt="Aditya Raj" width="220" height="250">
-              <div class = "heading">
-              <h3 > ADITYA RAJ </h3>
-              <h1 > FULL STACK DEVELOPER</h1>
-              <button id = "cbuton" style="background-color: rgba(83, 83, 83, 0.396); border: solid rgb(249, 248, 248);">
-              <a href="#contact" title="Contact" style="color: rgb(255, 254, 254); text-decoration :white;">Contact Me</a>
-             </button>
-              </div>
-           </div>
-            
+        <div class="large">
+            <!-- Add loading="lazy" for better performance and decoding="async" -->
+            <img id="img" 
+                 src="img/Mimg.png" 
+                 alt="Aditya Raj" 
+                 width="200" 
+                 height="200"
+                 loading="eager"
+                 decoding="async">
+<div class="content">
+            <div class="heading">
+                <h3>ADITYA RAJ</h3>
+                <h1>FULL STACK DEVELOPER</h1>
+                <button id="cbuton" style="background-color: rgba(83, 83, 83, 0.396); border: solid rgb(249, 248, 248);">
+                    <a href="#contact" title="Contact" style="color: rgb(255, 254, 254); text-decoration: none;">Contact Me</a>
+                    
+                </button>
+            </div>
+           <section class="about-section">
+  <div class="about-left">
+    <h2>ABOUT</h2>
+  </div>
+
+  <div class="about-right">
+    <div class="icon">◇</div>
+    <h3>Software Engineer</h3>
+    <p>
+      This is the space to introduce visitors to the business or brand.
+      Briefly explain who's behind it, what it does and what makes it unique.
+      Share its core values and what this site has to offer.
+    </p>
+    <a href="#" class="btn">LINKEDIN ↗</a>
+  </div>
+</section>
+
+        </div>
+    </div>
 
         <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: asingh20@oswego.edu</p>
+            <h2>Contact</h2>
+            <p>Email: asingh20@oswego.edu</p>
         </section>
 
-
-
     </body>
-
-
-        
-
-
 </html>
-
-
-
-
-
-
-
-
-
