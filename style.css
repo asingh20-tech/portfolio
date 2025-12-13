@@ -1,0 +1,42 @@
+.heading{
+    margin-top: 60px;
+    margin-left: 50px ;
+    font-weight:700 ;
+    font-size:x-large;
+    color: white;
+    font-family: 'Azeret Mono', monospace;
+    
+}
+
+h4{
+    margin-left: 10px;
+    margin-top:30px;
+    color: white;
+    font-family: 'Azeret Mono', monospace;
+}
+button{
+    padding: 1%;
+    border-spacing: 20px;
+    font-family: 'Azeret Mono', monospace;
+    margin-left: 50px ;
+}
+#cbuton{
+    font-family: 'Azeret Mono', monospace;  
+   
+}
+#img{
+
+  margin-top: 60px;
+  width: 200px; /* Or any size */
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden; /* Hides parts of image outside the circle */
+  display: inline-block; /* Or block */
+}
+.large{
+    display: flex;  
+}
+html{
+  scroll-behavior: smooth;
+}
+
