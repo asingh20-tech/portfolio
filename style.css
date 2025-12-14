@@ -23,7 +23,11 @@ button{
 
 #cbuton{
     font-family: 'Azeret Mono', monospace;  
+    padding: 2%;
+    border-spacing: 20px;
     margin-bottom: 10px;
+    margin-left: 1px;
+    letter-spacing: 1px;
 }
 
 #img{
@@ -58,11 +62,15 @@ html{
         opacity: 1;
     }
 }
+
+/* -----------------------------ABOUT ---------------------------- */
 .about-section {
+    
   margin-top: 40px;
+
   display: grid;
   grid-template-columns: 1fr 2fr; /* left / right */
-  gap: 400px;
+  gap: 200px;
   
   background: rgb(43, 41, 41);
   font-family: 'Azeret Mono', monospace;
@@ -70,12 +78,14 @@ html{
 }
 
 .about-left h2 {
+  
   font-size: 32px;
   letter-spacing: 2px;
 }
 
 .about-right {
-  min-width: 600px;
+    margin-top: 10px;
+   min-width: 600px;
 }
 
 .about-right h3 {
@@ -84,7 +94,7 @@ html{
 }
 
 .about-right p {
-  line-height: 1.7;
+ line-height: 1.7;
   margin-bottom: 24px;
 }
 
@@ -94,11 +104,12 @@ html{
   padding: 1%;
   border-spacing: 20px;
   background-color: rgba(83, 83, 83, 0.396);
-  border: solid rgb(243, 239, 239);
+  border: 1px solid rgb(243, 239, 239);
   color: #f3eeee;
   text-decoration: none;
   letter-spacing: 1px;
 }
+/* --------------------------About------------------------------ */
 
  
 .content{
