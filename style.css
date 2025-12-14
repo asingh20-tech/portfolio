@@ -110,7 +110,73 @@ html{
   letter-spacing: 1px;
 }
 /* --------------------------About------------------------------ */
+.skills{
+    display: inline-flexbox;
+    columns: 2;
+    column-gap: 20px;
+    margin-top: 10px;
+}
+/* ------------------project section---------------------------- */
+.projects-section {
+  background: rgb(43, 41, 41);
+  font-family: 'Azeret Mono', monospace;
+  color: #fff;
+}
 
+.section-title {
+  font-size: 48px;
+  margin-bottom: 60px;
+  letter-spacing: 4px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+.project-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.project-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.project-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-overlay h3 {
+  margin: 0 0 8px;
+  font-size: 20px;
+}
+
+.project-overlay p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+.project-card:hover img {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+/* ------------------------------------------------------- */
  
 .content{
     display: block;
